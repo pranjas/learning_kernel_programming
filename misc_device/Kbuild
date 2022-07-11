@@ -1,0 +1,5 @@
+obj-m := misc_mod.o
+misc_mod-objs := misc_module.o
+DEBUG_FLAGS := -DDEBUG
+ccflags-y := -I$(src)/../common $(DEBUG_FLAGS)
+ccflags-y += -DUSE_LOCKING

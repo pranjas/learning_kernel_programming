@@ -1,0 +1,4 @@
+obj-m := timer_mod.o
+timer_mod-objs := timer_module.o
+DEBUG_FLAGS := -DDEBUG
+ccflags-y := -I$(src)/../common $(DEBUG_FLAGS)

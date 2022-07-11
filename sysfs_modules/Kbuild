@@ -1,0 +1,4 @@
+obj-m := sysfs_mod.o
+sysfs_mod-objs := sysfs_module.o
+DEBUG_FLAGS := -DDEBUG
+ccflags-y := -I$(src)/../common $(DEBUG_FLAGS)
